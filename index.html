@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | CorsoCalc</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 1000px; height: 600px; background: #231F20"></canvas>
+    <script src="Build/test9995.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/test9995.data",
+        frameworkUrl: "Build/test9995.framework.js",
+        codeUrl: "Build/test9995.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "CorsoCalc",
+        productVersion: "1.0",
+      });
+    </script>
+  </body>
+</html>
